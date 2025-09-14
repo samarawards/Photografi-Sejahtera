@@ -3,7 +3,7 @@
 <head>
     <title>Sign Up</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/photograf\signin\assets\css\style.css">
+    <link rel="stylesheet" href="\Photorgrafi-Website\Photografi-Sejahtera\signin\assets\css\style.css">
 </head>
 <body>
   <header>Logo</header>
