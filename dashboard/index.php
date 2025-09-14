@@ -116,6 +116,11 @@
       border: 1px solid grey;
       cursor: pointer;
     }
+
+    .btn-light a {
+      color: #000;
+      text-decoration: none;
+    }
     section {
       padding: 60px 20px;
     }
@@ -424,7 +429,7 @@
       Kami siap membantu Anda menangkap setiap momen berharga dalam hidup. Dengan <br>
       pengalaman dan keahlian, kami menjamin hasil yang memuaskan. <br><br>
       <button class="btn-dark">Lihat</button>
-      <button class="btn-light">Paket</button>
+      <button class="btn-light"> <a href="http://localhost/Photorgrafi-Website/Photografi-Sejahtera/package/#">Paket</a></button>
     </p><br>
   </section>
   <!-- gambar1 -->

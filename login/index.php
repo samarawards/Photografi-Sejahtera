@@ -23,7 +23,7 @@
                     <button class="btn-black">Sign up</button>
                     <button class="btn-white"><i class='bx bxl-google'></i> Sign up with Google</button>
                     <div class="signup-link">
-                        Don't have an account? <a href="http://localhost/photograf/signingpt/">Sign up</a>
+                        Don't have an account? <a href="http://localhost/Photorgrafi-Website/Photografi-Sejahtera/signin/">Sign up</a>
                     </div>
                 </form>
             </div>
