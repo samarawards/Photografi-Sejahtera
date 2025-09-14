@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>EN-Fotografi</title>
   <style>
     body {
@@ -145,13 +145,14 @@
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 3 kolom sejajar */
+      text-align: center;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px; /* jarak antar gambar */
     }
 
     .gallery img {
       width: 100%;        /* penuh sesuai kolom */
-      height: 200px;      /* tinggi seragam */
+      height: 100%;      /* tinggi seragam */
       object-fit: cover;  /* gambar dipotong biar proporsi terjaga */
       border-radius: 8px; /* biar rapi */
     }
@@ -282,6 +283,103 @@
     footer p {
       margin: 0;
     }
+    h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p.sub-title {
+      font-size: 16px;
+      margin-bottom: 30px;
+      color: #444;
+      text-align: center;
+    }
+
+    .testimonial-container {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding-bottom: 20px;
+    }
+
+    .testimonial-card {
+      flex: 0 0 300px;
+      border: 2px solid #000000ff;
+      padding: 20px;
+      border-radius: 0px;
+      background: #fff;
+    }
+
+    .testimonial-card p.quote {
+      font-size: 15px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .profile-info {
+      font-size: 14px;
+    }
+
+    .profile-info strong {
+      display: block;
+      font-weight: bold;
+    }
+
+    .read-more {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+    }
+
+    /* Navigation buttons */
+    .nav-btns {
+      display: flex;
+      justify-content: right;
+      margin-top: 20px;
+    }
+
+    .btn {
+      border: 1px solid #ccc;
+      background: #fff;
+      padding: 8px 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .dots {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .dot {
+      height: 8px;
+      width: 8px;
+      margin: 0 4px;
+      background-color: #ccc;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .dot.active {
+      background-color: #000;
+    }
   </style>
 </head>
 <body>
@@ -316,10 +414,10 @@
   </section>
   <!-- gambar1 -->
   <div class="image-container">
-    <img src="img/monyet.jpg" alt="image monyet">
+    <img src="img/sylusss.jpg" alt="image monyet">
   </div><br><br><br><br><br><br>
   <!-- Paket Foto -->
-  <section id="Paket">
+  <section id="Paket-foto">
     <h2>Paket Foto Menarik untuk Setiap<br>Momen Spesial Anda Bersama Kami</h2>
     <div class="grid-3">
       <div class="card">
@@ -347,13 +445,13 @@
     <h2>Galeri Foto</h2>
     <p style="text-align: center">Lihat hasil pemotretan terbaik kami di sini</p>
     <div class="gallery">
-      <div class="card img">
+      <div class="gallery img">
         <img src="img/Sylus2.jpg" alt="">
       </div>
-      <div class="card img">
+      <div class="gallery img">
         <img src="img/Sylus1.jpg" alt="">
       </div>
-      <div class="card img">
+      <div class="gallery img">
         <img src="img/Sylus3.jpg" alt="">
       </div>
     </div>
@@ -439,6 +537,7 @@
     </div>
   </section>
 
+  <!-- Testimoni -->
   <section id="testimoni">
     <h2>Testimoni Pelanggan</h2>
     <p class="sub-title">Pengalaman luar biasa dengan Studio Fotografi Sejahtera.</p>
