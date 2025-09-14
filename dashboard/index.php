@@ -414,7 +414,7 @@
   </section>
   <!-- gambar1 -->
   <div class="image-container">
-    <img src="img/sylusss.jpg" alt="image monyet">
+    <img src="img/sylusss.jpg" alt="">
   </div><br><br><br><br><br><br>
   <!-- Paket Foto -->
   <section id="Paket-foto">
