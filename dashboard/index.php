@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>EN-Fotografi</title>
   <style>
     body {
@@ -380,6 +382,19 @@
     .dot.active {
       background-color: #000;
     }
+
+    .card i {
+      font-size: 60px;
+    }
+
+    .footer-top i {
+      font-size: 20px;
+    }
+
+    .profile i {
+      font-size: 33px;
+      padding-right: 10px;
+    }
   </style>
 </head>
 <body>
@@ -421,19 +436,19 @@
     <h2>Paket Foto Menarik untuk Setiap<br>Momen Spesial Anda Bersama Kami</h2>
     <div class="grid-3">
       <div class="card">
-        <img src="img/Photography.png" alt="">
+        <i class='bx  bx-camera'  ></i>  
         <h3>Pilih Paket yang Sesuai dengan Kebutuhan dan Anggaran Anda</h3>
         <p>Kami menawarkan berbagai paket foto untuk setiap momen berharga Anda.</p>
         <a>Lihat &rsaquo;</a>      
       </div>
       <div class="card">
-        <img src="img/Photography.png" alt="">
+        <i class='bx  bx-camera'  ></i>  
         <h3>Paket Prewedding: Ciptakan Kenangan Indah Sebelum Hari Bahagia Anda</h3>
         <p>Paket ini dirancang untuk menangkap momen-momen romantis Anda.</p>
         <a>Lihat &rsaquo;</a>
       </div>
       <div class="card">
-        <img src="img/Photography.png" alt="">
+        <i class='bx  bx-camera'  ></i>  
         <h3>Paket Wisuda: Rayakan Keberhasilan Anda dengan Foto yang Memukau</h3>
         <p>Abadikan momen kelulusan Anda dengan foto yang penuh makna.</p>
         <a>Lihat &rsaquo;</a>
@@ -546,7 +561,7 @@
       <div class="testimonial-card">
         <p class="quote">"Hasil foto yang sangat memuaskan dan profesional!"</p>
         <div class="profile">
-          <img src="\Fotografi1\img\Picture.png" alt="user">
+          <i class='bx  bx-user'  ></i> 
           <div class="profile-info">
             <strong>Rina Sari</strong>
             <span>Konsultan, PT. Maju</span>
@@ -558,7 +573,7 @@
       <div class="testimonial-card">
         <p class="quote">"Pengalaman yang tak terlupakan, sangat direkomendasikan!"</p>
         <div class="profile">
-          <img src="\Fotografi1\img\Picture.png" alt="user">
+          <i class='bx  bx-user'  ></i>
           <div class="profile-info">
             <strong>Andi Prasetyo</strong>
             <span>Manager, CV. Kreatif</span>
@@ -570,7 +585,7 @@
       <div class="testimonial-card">
         <p class="quote">"Foto-foto yang dihasilkan sangat berkualitas!"</p>
         <div class="profile">
-          <img src="\Fotografi1\img\Picture.png" alt="user">
+          <i class='bx  bx-user'  ></i>
           <div class="profile-info">
             <strong>Siti Aminah</strong>
             <span>Direktur, Studio XYZ</span>
@@ -582,7 +597,7 @@
       <div class="testimonial-card">
         <p class="quote">"Tim fotografernya sangat ramah dan hasilnya luar biasa!"</p>
         <div class="profile">
-          <img src="\Fotografi1\img\Picture.png" alt="user">
+          <i class='bx  bx-user'  ></i>
           <div class="profile-info">
             <strong>Budi Santoso</strong>
             <span>CEO, Startup ABC</span>
@@ -617,7 +632,6 @@
     </script>
   </section>
 
-  <!-- Footer -->
   <footer>
   <div class="footer-top">
     <div class="logo">Logo</div>
@@ -629,7 +643,12 @@
       <p>Link</p>
     </div>
     <div>
-      <img src="img/sponsor.png" width="125" height="30" alt="">
+      <i class='bxl  bx-facebook-circle'  ></i> 
+      <i class='bxl  bx-instagram'  ></i> 
+      <i class='bxl  bx-twitter-x'  ></i> 
+      <i class='bxl  bx-linkedin-square'  ></i> 
+      <i class='bxl  bx-youtube'  ></i> 
+      <!-- <img src="img/sponsor.png" width="125" height="30" alt=""> -->
     </div>
   </div>
 

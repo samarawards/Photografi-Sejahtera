@@ -3,7 +3,7 @@
     <head>
         <title>Sign In</title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="/photograf\login\assets\css\style.css">
+        <link rel="stylesheet" href="\Photorgrafi-Website\Photografi-Sejahtera\login\assets\css\style.css">
     </head>
     <body>
         <div>
