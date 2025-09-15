@@ -6,11 +6,57 @@
     <title>Paket Harga Foto</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; background: #fafafa; }
-        header { background: #fff; padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #eee; }
-        .logo { font-weight: bold; font-size: 1.2em; }
-        nav { flex: 1; margin-left: 32px; }
-        nav a { margin: 0 12px; text-decoration: none; color: #333; }
-        .cta { background: #222; color: #fff; border: none; padding: 8px 20px; border-radius: 4px; cursor: pointer; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);}
+        .logo { font-size: 24px; font-family: 'brush script MT', cursive;}
+        nav { display: flex; gap: 25px; font-size: 14px; align-items: center;}
+        nav a { text-decoration: none; color: #333; transition: color 0.3s;}
+        nav a:hover { color: #555;}
+        .arrow {
+      display: inline-block;
+      margin-left: 5px;
+      margin-bottom: 2px;
+      width: 4px;
+      height: 4px;
+      border-left: 2px solid black;
+      border-bottom: 2px solid black;
+      transform: rotate(-45deg);
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      min-width: 140px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      display: block;
+      padding: 8px 12px;
+      text-decoration: none;
+      color: #333;
+    }
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .hubungi-btn {
+      background-color: #000;
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .hubungi-btn:hover {
+      background-color: #444;
+    }
         .hero { background: #444; color: #fff; text-align: center; padding: 48px 0 32px 0; }
         .hero h1 { margin: 0 0 12px 0; font-size: 2em; }
         .hero p { margin: 0 0 24px 0; }
@@ -40,23 +86,29 @@
 </head>
 <body>
     <header>
-        <div class="logo">Logo</div>
-        <nav>
-            <a href="tentangkami.php">Tentang Kami</a>
-            <a href="#">Paket Foto</a>
-            <a href="#">Galeri</a>
-            <a href="#">Kontak Kami</a>
-        </nav>
-        <button class="cta">Hubungi</button>
-    </header>
-    <div class="hero">
-        <h1>Paket Harga Foto</h1>
-        <p>Temukan paket foto terbaik untuk momen spesial Anda di Studio Fotografi Sejahtera.</p>
-        <div class="btn-group">
-            <button class="active">Umum</button>
-            <button>Perusahaan</button>
+      <div class="logo">Logo</div>
+      <nav>
+        <a href="http://localhost/Photorgrafi-Website/Photografi-Sejahtera/dashboard/?#Tentang-kami">Tentang kami</a>
+        <a href="#Paket-foto">Paket foto</a>
+        <a href="http://localhost/Photorgrafi-Website/Photografi-Sejahtera/dashboard/?#Galeri">Galeri</a>
+        <div class="dropdown">
+          <a href="http://localhost/Photorgrafi-Website/Photografi-Sejahtera/dashboard/?#Kontak-kami" class="dropdown-btn">Kontak kami<span class="arrow"></span></a>
+          <div class="dropdown-content">
+            <a href="#WhatsApp">WhatsApp</a>
+            <a href="#Email">Email</a>
+          </div>
         </div>
-    </div>
+      </nav>
+      <a href="#" class="hubungi-btn">Hubungi</a>
+  </header><br><br>
+      <div class="hero" id="Paket-foto">
+          <h1>Paket Harga Foto</h1>
+          <p>Temukan paket foto terbaik untuk momen spesial Anda di Studio Fotografi Sejahtera.</p>
+          <div class="btn-group">
+              <button class="active">Umum</button>
+              <button>Perusahaan</button>
+            </div>
+        </div>
     <div class="container">
         <div class="section-title">Paket</div>
         <div class="section-desc">Temukan paket foto terbaik untuk momen spesial Anda.</div>

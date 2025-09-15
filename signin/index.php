@@ -28,6 +28,6 @@
             Already have an account? <a href="http://localhost/Photorgrafi-Website/Photografi-Sejahtera/login/">Log In</a>
         </div>
     </div>
-  <footer>© 2025 NamaKelompok</footer>
+  <footer>© 2025 Sejahtera Photography</footer>
 </body>
 </html>

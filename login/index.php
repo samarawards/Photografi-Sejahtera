@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sign In</title>
+        <title>Login</title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="\Photorgrafi-Website\Photografi-Sejahtera\login\assets\css\style.css">
     </head>
@@ -27,7 +27,7 @@
                     </div>
                 </form>
             </div>
-            <footer>© 2025 NamaKelompok</footer>
+            <footer>© 2025 Sejahtera Photography</footer>
         </div>
 
         <div style="background-color: grey;">

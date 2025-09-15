@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <title>EN-Fotografi</title>
+  <title>Dashboard</title>
   <style>
     body {
       margin: 0;
@@ -22,6 +22,7 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     .logo {
+      color: black;
       font-size: 24px;
       font-family: 'brush script MT', cursive;
     }
@@ -285,7 +286,7 @@
       justify-content: center;
       align-items: center;
       gap: 20px;
-      font-size: 14px;
+      font-size: 10px;
     }
     footer p {
       margin: 0;
@@ -419,7 +420,7 @@
         </div>
       </nav>
       <a href="#" class="hubungi-btn">Hubungi</a>
-  </header><br><br>
+  </header>
   <!-- Tentang Kami -->
   <section id="Tentang-kami">
     <h1>
@@ -659,7 +660,7 @@
 
   <section class="footer-bottom">
     <div>
-      <p>© 2025 NamaUsaha. All rights reserved.</p>
+      <p>© 2025 Sejahtera Photography. All rights reserved.</p>
       <a href="#">Kebijakan Privasi</a>
       <a href="#">Syarat Layanan</a>
       <a href="#">Pengaturan Cookies</a>
