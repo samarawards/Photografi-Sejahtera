@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Fotografi | Nama Anda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">Sejahtera Photography</a>
+            <ul>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Seni Visual Melalui Lensa</h1>
+            <p>Menangkap momen yang bercerita.</p>
+        </section>
+
+        <section id="gallery" class="gallery-container">
+            <h2>Galeri Foto</h2>
+            <div class="photo-grid">
+                <div class="card">
+                    <img src="https://picsum.photos/id/10/800/1200" alt="Deskripsi Foto 1" loading="lazy">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/20/800/600" alt="Deskripsi Foto 2" loading="lazy">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/30/800/1000" alt="Deskripsi Foto 3" loading="lazy">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/45/800/600" alt="Deskripsi Foto 4" loading="lazy">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/55/800/900" alt="Deskripsi Foto 5" loading="lazy">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/60/800/600" alt="Deskripsi Foto 6" loading="lazy">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/237/800/600" alt="Deskripsi Foto 7" loading="lazy">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/1003/800/600" alt="Deskripsi Foto 8" loading="lazy">
+            </div>
+            <a href="index.html" class="menu-link">Pilih Paket</a>
+        </section>
+        <div class="panel-admin-container">
+            <h1>Panel Admin</h1>
+            <div class="section-box">
+                <h3>Tambah Paket Foto</h3>
+                <form width="100%">
+                    <div class="form-group">
+                        <label for="namaPaket">Nama Paket:</label>
+                <input type="text" id="namaPaket">
+            </div>
+            <div class="form-group">
+                <label for="harga">Harga (IDR):</label>
+                <input type="text" id="harga">
+            </div>
+            <div class="form-group">
+                <label for="deskripsi">Deskripsi:</label>
+                <textarea id="deskripsi" rows="4"></textarea>
+            </div>
+            <div class="form-buttons">
+                <button type="submit">Simpan</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="section-box">
+        <h3>Tambah Galeri</h3>
+        <form>
+            <div class="form-group">
+                <label for="judulGaleri">Judul Galeri:</label>
+                <input type="text" id="judulGaleri">
+            </div>
+            <div class="form-group file-input-group">
+                <label for="pilihFoto">Pilih Foto (bisa banyak):</label>
+                <input type="file" id="pilihFoto" multiple>
+            </div>
+            <div class="form-buttons">
+                <button type="submit">Simpan</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="section-box">
+        <h3>Daftar Paket Foto</h3>
+        <p>Belum ada paket</p>
+    </div>
+
+    <div class="section-box">
+        <h3>Daftar Galeri</h3>
+        <p>Belum ada galeri</p>
+    </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nama Fotografer. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-button">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
