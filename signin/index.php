@@ -65,6 +65,9 @@
   <footer>© 2025 Sejahtera Photography</footer>
 
 <script>
+  //untuk hapus all users
+  //localStorage.clear();
+
   let passwordInput = document.getElementById("password");
   let checkPassword = false;
 
@@ -117,11 +120,30 @@
       return;
     }
 
-    console.log("Name: " + nameInput);
-    console.log("Email: " + emailInput);
-    console.log("Password: " + passValue);
+    // 🔹 Ambil data lama dari localStorage
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
+    // 🔹 Cek apakah email sudah terdaftar
+    let existingUser = users.find(user => user.email === emailInput);
+    if (existingUser) {
+      alert("❌ Email already registered!");
+      return;
+    }
+
+    // 🔹 Simpan user baru ke array
+    users.push({
+      name: nameInput,
+      email: emailInput,
+      password: passValue
+    });
+
+    // 🔹 Simpan array ke localStorage
+    localStorage.setItem("users", JSON.stringify(users));
+
+    alert("✅ Account created successfully!");
+    console.log(users);
   });
 </script>
 
-</body>
+  </body>
 </html>
