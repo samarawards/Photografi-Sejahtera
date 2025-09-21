@@ -3,7 +3,7 @@
     <head>
         <title>Login</title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="\Photorgrafi-Website\Photografi-Sejahtera\login\assets\css\style.css">
+        <link rel="stylesheet" href="\Photografi-Sejahtera\login\assets\css\style.css">
     </head>
     <body>
         <div>
@@ -31,7 +31,7 @@
         </div>
 
         <div style="background-color: grey;">
-            <img src="\Photorgrafi-Website\Photografi-Sejahtera\login\assets\image\nct-dream-chenle-hot-sauce-4k-wallpaper-3840x2160-uhdpaper.com-109.0_a.jpg" width="100%" height="100%">
+            <img src="\Photografi-Sejahtera\login\assets\image\nct-dream-chenle-hot-sauce-4k-wallpaper-3840x2160-uhdpaper.com-109.0_a.jpg" width="100%" height="100%">
         </div>
 
         <script>

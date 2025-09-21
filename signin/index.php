@@ -3,7 +3,7 @@
 <head>
     <title>Sign Up</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="\Photorgrafi-Website\Photografi-Sejahtera\signin\assets\css\style.css">
+    <link rel="stylesheet" href="\Photografi-Sejahtera\signin\assets\css\style.css">
   <style>
     .requirement-box {
       margin-top: 0px;   /* jarak atas dari input password */
@@ -11,14 +11,14 @@
 
     .requirement-box label {
       margin: -7px 0;    /* jarak antar checklist (atas-bawah) */
-      font-size: 1px;   /* biar teks lebih rapi */
+      font-size: 10px;   /* biar teks lebih rapi */
     }
 
     .requirement {
       width: 7px;
       height: 7px;
       margin-right: 3px; /* jarak antara checkbox & teks */
-      font-size: 1px;
+      font-size: 10px;
       text-align: left;
     }
 
