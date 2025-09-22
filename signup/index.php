@@ -59,7 +59,7 @@
         </form>
         
         <div class="login-link" id="output">
-            Already have an account? <a href="http://localhost/Photorgrafi-Website/Photografi-Sejahtera/login/">Log In</a>
+            Already have an account? <a href="/Photografi-Sejahtera/login/">Log In</a>
         </div>
     </div>
   <footer>© 2025 Sejahtera Photography</footer>

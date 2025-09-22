@@ -1,0 +1,388 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  color: black;
+  font-size: 24px;
+  font-family: 'brush script MT', cursive;
+}
+nav {
+  display: flex;
+  gap: 25px;
+  font-size: 14px;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #555;
+}
+.arrow {
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 2px;
+  width: 4px;
+  height: 4px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: rotate(-45deg);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 140px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+}
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.signup-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.signup-btn:hover {
+  background-color: #444;
+}
+.image-container {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.image-container img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #000;
+}
+p {
+  text-align: center;
+}
+.btn-dark {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+.btn-light {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+.btn-light a {
+  color: #000;
+  text-decoration: none;
+}
+.gambar-tengah {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+   /* Paket */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 40px 30px;
+  padding: 20px;
+}
+.card {
+  padding: 20px;
+  border: 1px solid #ffffffff;
+  border-radius: 8px;
+  background: #ffffffff;
+  text-align: center;
+}
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+.gallery {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* jarak antar gambar */
+}
+
+.gallery img {
+  width: 100%;/* penuh sesuai kolom */
+  height: 100%;  /* tinggi seragam */
+  object-fit: cover;  /* gambar dipotong biar proporsi terjaga */
+  border-radius: 8px; /* biar rapi */
+}
+/* Kontak */
+.kontak-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.kontak-info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.kontak-info p {
+  margin-bottom: 20px;
+  color: #555;
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.info-item .icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Kolom kanan (form) */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Baris sejajar (nama depan & belakang, email & telp) */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dua kolom */
+  gap: 20px; /* jarak antar kolom */
+}
+.form-group {
+  display: flex;
+  flex-direction: column; /* supaya p di atas input */
+}
+.form-input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Dropdown */
+.form-select {
+  height: 40px;
+}
+
+/* Textarea */
+.form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Radio & Checkbox */
+.form-group label {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+/* Tombol submit */
+.btn-submit {
+  background: black;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn-submit:hover {
+  background: #333;
+}
+
+/* Footer */
+footer { background: #fff; padding: 24px 0 8px 0; text-align: center; font-size: 0.95em; color: #888; border-top: 1px solid #eee; }
+footer .links { margin: 8px 0; }
+footer .links a { margin: 0 8px; color: #888; text-decoration: none; }
+footer .social { margin-top: 8px; }
+footer .social span { margin: 0 4px; font-size: 1.2em; }
+
+section {
+  padding: 60px 20px;
+}
+section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+    h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p.sub-title {
+      font-size: 16px;
+      margin-bottom: 30px;
+      color: #444;
+    }
+
+    .testimonial-container {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding-bottom: 20px;
+    }
+
+    .testimonial-card {
+      flex: 0 0 300px;
+      border: 2px solid #000000ff;
+      padding: 20px;
+      border-radius: 0px;
+      background: #fff;
+    }
+
+    .testimonial-card p.quote {
+      font-size: 15px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .profile-info {
+      font-size: 14px;
+    }
+
+    .profile-info strong {
+      display: block;
+      font-weight: bold;
+    }
+
+    .read-more {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+    }
+
+    /* Navigation buttons */
+    .nav-btns {
+      display: flex;
+      justify-content: right;
+      margin-top: 20px;
+    }
+
+    .btn {
+      border: 1px solid #ccc;
+      background: #fff;
+      padding: 8px 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .dots {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .dot {
+      height: 8px;
+      width: 8px;
+      margin: 0 4px;
+      background-color: #ccc;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .dot.active {
+      background-color: #000;
+    }
+.card i {
+  font-size: 60px;
+}
+
+.profile i {
+  font-size: 33px;
+  padding-right: 10px;
+}
+
+ /* BAGIAN PACKAGE */
+        .hero { background: #444; color: #fff; text-align: center; padding: 48px 0 32px 0; }
+        .hero h1 { margin: 0 0 12px 0; font-size: 2em; }
+        .hero p { margin: 0 0 24px 0; }
+        .hero .btn-group button { margin: 0 8px; padding: 8px 24px; border: none; border-radius: 4px; cursor: pointer; }
+        .hero .btn-group .active { background: #fff; color: #444; }
+        .container { max-width: 1100px; margin: 32px auto; padding: 0 16px; border-radius: 8px; box-shadow: 0 2px 8px #0001; }
+        .section-title { font-size: 1.5em; margin-bottom: 8px; }
+        .section-desc { color: #666; margin-bottom: 24px; }
+        .paket-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-bottom: 32px; }
+        .paket-card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 16px; text-align: center; }
+        .paket-card img { width: 100%; height: 420px; object-fit: cover; background: #eee; border-radius: 4px; margin-bottom: 12px; }
+        .paket-card .paket-title { font-weight: bold; margin-bottom: 4px; cursor: pointer; }
+        .paket-card .paket-price { color: #444; }
+        @media (max-width: 900px) {
+            .paket-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .paket-grid { grid-template-columns: 1fr; }
+            header, .container { padding: 8px; }
+        }

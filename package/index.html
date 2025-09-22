@@ -3,103 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paket Harga Foto</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #fafafa; }
-        header { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);}
-        .logo { font-size: 24px; font-family: 'brush script MT', cursive;}
-        nav { display: flex; gap: 25px; font-size: 14px; align-items: center;}
-        nav a { text-decoration: none; color: #333; transition: color 0.3s;}
-        nav a:hover { color: #555;}
-        .arrow {
-      display: inline-block;
-      margin-left: 5px;
-      margin-bottom: 2px;
-      width: 4px;
-      height: 4px;
-      border-left: 2px solid black;
-      border-bottom: 2px solid black;
-      transform: rotate(-45deg);
-    }
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #fff;
-      min-width: 140px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      z-index: 1;
-    }
-    .dropdown-content a {
-      display: block;
-      padding: 8px 12px;
-      text-decoration: none;
-      color: #333;
-    }
-    .dropdown-content a:hover {
-      background-color: #f0f0f0;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    .hubungi-btn {
-      background-color: #000;
-      color: #fff;
-      padding: 8px 16px;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-    .hubungi-btn:hover {
-      background-color: #444;
-    }
-        .hero { background: #444; color: #fff; text-align: center; padding: 48px 0 32px 0; }
-        .hero h1 { margin: 0 0 12px 0; font-size: 2em; }
-        .hero p { margin: 0 0 24px 0; }
-        .hero .btn-group button { margin: 0 8px; padding: 8px 24px; border: none; border-radius: 4px; cursor: pointer; }
-        .hero .btn-group .active { background: #fff; color: #444; }
-        .container { max-width: 1100px; margin: 32px auto; padding: 0 16px; border-radius: 8px; box-shadow: 0 2px 8px #0001; }
-        .section-title { font-size: 1.5em; margin-bottom: 8px; }
-        .section-desc { color: #666; margin-bottom: 24px; }
-        .paket-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-bottom: 32px; }
-        .paket-card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 16px; text-align: center; }
-        .paket-card img { width: 100%; height: 420px; object-fit: cover; background: #eee; border-radius: 4px; margin-bottom: 12px; }
-        .paket-card .paket-title { font-weight: bold; margin-bottom: 4px; cursor: pointer; }
-        .paket-card .paket-price { color: #444; }
-        .footer { background: #fff; padding: 24px 0 8px 0; text-align: center; font-size: 0.95em; color: #888; border-top: 1px solid #eee; }
-        .footer .links { margin: 8px 0; }
-        .footer .links a { margin: 0 8px; color: #888; text-decoration: none; }
-        .footer .social { margin-top: 8px; }
-        .footer .social span { margin: 0 4px; font-size: 1.2em; }
-        @media (max-width: 900px) {
-            .paket-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 600px) {
-            .paket-grid { grid-template-columns: 1fr; }
-            header, .container { padding: 8px; }
-        }
-    </style>
+    <link rel="stylesheet" href="\Photografi-Sejahtera\aassets\style.css">
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Paket-Harga-Foto/Photography-Sejahtera</title>
 </head>
 <body>
     <header>
       <div class="logo">Logo</div>
       <nav>
-        <a href="http://localhost/Photorgrafi-Website/Photografi-Sejahtera/dashboard/?#Tentang-kami">Tentang kami</a>
+        <a href="/Photografi-Sejahtera/dashboard/?#Tentang-kami">Tentang kami</a>
         <a href="#Paket-foto">Paket foto</a>
-        <a href="http://localhost/Photorgrafi-Website/Photografi-Sejahtera/dashboard/?#Galeri">Galeri</a>
+        <a href="/Photografi-Sejahtera/dashboard/?#Galeri">Galeri</a>
         <div class="dropdown">
-          <a href="http://localhost/Photorgrafi-Website/Photografi-Sejahtera/dashboard/?#Kontak-kami" class="dropdown-btn">Kontak kami<span class="arrow"></span></a>
+          <a href="/Photografi-Sejahtera/dashboard/?#Kontak-kami" class="dropdown-btn">Kontak kami<span class="arrow"></span></a>
           <div class="dropdown-content">
             <a href="#WhatsApp">WhatsApp</a>
             <a href="#Email">Email</a>
           </div>
         </div>
       </nav>
-      <a href="#" class="hubungi-btn">Hubungi</a>
+      <a href="\Photografi-Sejahtera\signup" class="signup-btn">Sign Up</a>
   </header><br><br>
       <div class="hero" id="Paket-foto">
           <h1>Paket Harga Foto</h1>
@@ -147,20 +71,25 @@
             </div>
         </div>
     </div>
-    <div class="footer">
+    <footer>
+      <div class="footer">
         <div class="logo">Logo</div>
         <div class="links">
-            <a href="#">Home</a> |
-            <a href="#">Link</a> |
-            <a href="#">Link</a>
+          <a href="#">Home</a> | 
+          <a href="#"><i class='bxl  bx-facebook-circle'  ></i></a> |
+          <a href="#"><i class='bxl  bx-instagram'  ></i> </a> | 
+          <a href="#"><i class='bxl  bx-twitter-x'  ></i> </a> |
+          <a href="#"><i class='bxl  bx-linkedin-square'  ></i> </a> |  
+          <a href="#"><i class='bxl  bx-youtube'  ></i>  </a> | 
         </div>
         <div class="social">
-            <span>○</span>
-            <span>○</span>
-            <span>○</span>
-            <span>○</span>
+          <span>○</span>
+          <span>○</span>
+          <span>○</span>
+          <span>○</span>
         </div>
-        <div style="margin-top:8px;">© 2025 NamaStudio. All rights reserved. | Kebijakan Privasi | Disclaimer | Persetujuan Cookie</div>
-    </div>
+        <div style="margin-top:8px;">© 2025 Photography-Sejahtera. All rights reserved. | Kebijakan Privasi | Disclaimer | Persetujuan Cookie</div>
+      </div>
+    </footer>
 </body>
 </html>

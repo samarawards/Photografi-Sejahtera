@@ -1,6 +1,6 @@
-    * {
+    /* * {
       box-sizing: border-box;
-    }
+    } */
 
     body {
       margin: 0;
@@ -99,6 +99,30 @@
 
     .login-link a:hover {
       text-decoration: underline;
+    }
+
+        .requirement-box {
+      margin-top: 0px;   /* jarak atas dari input password */
+    }
+
+    .requirement-box label {
+      margin: -7px 0;    /* jarak antar checklist (atas-bawah) */
+      font-size: 10px;   /* biar teks lebih rapi */
+    }
+
+    .requirement {
+      width: 7px;
+      height: 7px;
+      margin-right: 3px; /* jarak antara checkbox & teks */
+      font-size: 10px;
+      text-align: left;
+    }
+
+    .error-message {
+      margin: none !important;
+      font-size: 1px !important;
+      color: red !important;
+      text-align: left !important;
     }
 
     footer {
