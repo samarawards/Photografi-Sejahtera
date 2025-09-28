@@ -11,15 +11,15 @@
             <div class="box">
                 <h1>Log In</h1>
                 <p>Lorem ipsum dolor sit amet adipiscing elit.</p>
-                <form>
+                <form id="loginform" action="login.php" method="POST">
                     <label>Email*</label>
-                    <input type="text" id="email" required>
+                    <input type="text" id="email" name= "email"required>
                     
                     <div class="forgot-pass">
                         <label>Password*</label> 
                         <a href="#">Forgot yout password?</a>
                     </div>
-                    <input type="email" id="password" required>
+                    <input type="password" id="password" name="password"required>
                     <button class="btn-black" id="button">Sign up</button>
                     <button class="btn-white"><i class='bx bxl-google'></i> Sign up with Google</button>
                     <div class="signup-link">
@@ -35,26 +35,22 @@
         </div>
 
         <script>
-            document.getElementById('button').addEventListener("click", function(){
-                const emailInput = document.getElementById('email').value;
-                const passInput = document.getElementById('password').value;
+            document.getElementById("loginform").addEventListener("button", async (e) => {
+                e.preventDefault();
 
-                //ambil data dari local storage
-                let users = JSON.parse(localStorage.getItem("users"));
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
 
-                let isExist = users.find(user => user.email === emailInput);
+                // Kirim ke PHP
+                const response = await fetch("login.php", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ email, password })
+                });
 
-                if (isExist) {
-                    if (isExist.password === passInput) {
-                        alert("Login Success!");
-                        console.log(isExist.name + " already logged in");
-                    } else {
-                        alert("Wrong password!!");
-                    }
-                } else {
-                    alert("Email not found!");
-                }
-            })
+                // const result = await response.json();
+                // document.getElementById("message").textContent = result.message;
+            });
         </script>
     </body>
 </html>
