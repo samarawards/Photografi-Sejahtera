@@ -10,7 +10,7 @@
     <div class="box">
         <h1>Sign Up</h1>
         <p>Lorem ipsum dolor sit amet adipiscing elit.</p>
-        <form action="signup.php" method="POST">
+        <form action="proses_registrasi.php" method="POST" onsubmit="return validasiForm()">
         <label>Name*</label>
         <input type="text" id="nama" name="nama"required>
         <p class="error-message" id="nameReq"></p>

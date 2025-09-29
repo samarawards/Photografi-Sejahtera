@@ -23,7 +23,7 @@
                     <button class="btn-black" id="button">Sign up</button>
                     <button class="btn-white"><i class='bx bxl-google'></i> Sign up with Google</button>
                     <div class="signup-link">
-                        Don't have an account? <a href="/Photografi-Sejahtera/signin/">Sign up</a>
+                        Don't have an account? <a href="/Photografi-Sejahtera/signup/">Sign up</a>
                     </div>
                 </form>
             </div>
