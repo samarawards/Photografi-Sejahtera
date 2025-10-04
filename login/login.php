@@ -9,12 +9,21 @@
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row['password'])) {
-            echo "Login successful! Welcome " . $row['username'];
+            echo "<script>
+                    alert('Login successful! Welcome " . $row['username'] . "');
+                    window.location.href = '/Photografi-Sejahtera/dashboard/index.php';
+                  </script>";
         } else {
-            echo "Wrong password!";
+            echo "<script>
+                    alert('Wrong password!');
+                    window.location.href = '/Photografi-Sejahtera/login/index.php';
+                  </script>";
         }
     } else {
-        echo "Email not found!";
+        echo "<script>
+                alert('Email not found!');
+                window.location.href = '/Photografi-Sejahtera/login/index.php';
+              </script>";
     }
 
     $koneksi->close();

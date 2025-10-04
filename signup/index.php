@@ -10,7 +10,7 @@
     <div class="box">
         <h1>Sign Up</h1>
         <p>Lorem ipsum dolor sit amet adipiscing elit.</p>
-        <form action="proses_registrasi.php" method="POST" onsubmit="return validasiForm()">
+        <form id = "signupform" action="proses_registrasi.php" method="POST" onsubmit="return validasiForm()">
         <label>Name*</label>
         <input type="text" id="nama" name="nama"required>
         <p class="error-message" id="nameReq"></p>
@@ -21,11 +21,11 @@
 
         <label>Password*</label>
         <input type="password" id="password" name="password" required>
-        <div class="requirement-box">
+        <!-- <div class="requirement-box">
           <label><input type="checkbox" class="requirement" id="8char" disabled> At least 8 characters</label>
           <label><input type="checkbox" class="requirement"id="uppercase" disabled> Include UPPERCASE</label>
           <label><input type="checkbox" class="requirement" id="number" disabled> Include number</label>
-        </div>
+        </div> -->
         
         <button class="btn-black" id="button">Sign up</button>
         <button class="btn-white"><i class='bx bxl-google'></i> Sign up with Google</button>
@@ -37,86 +37,6 @@
     </div>
   <footer>© 2025 Sejahtera Photography</footer>
   <script src="script_signup.js"></script>
-<!-- <script>
-  //untuk hapus all users
-  //localStorage.clear();
-
-  // let passwordInput = document.getElementById("password");
-  // let checkPassword = false;
-
-  // passwordInput.addEventListener("keyup", function () {
-  //   const pass = this.value;
-
-  //   // Checkbox elements
-  //   const minCharPass = document.getElementById("8char");
-  //   const uppercasePass = document.getElementById("uppercase");
-  //   const numberPass = document.getElementById("number");
-
-  //   // Cek panjang minimal 8
-  //   minCharPass.checked = pass.length >= 8;
-
-  //   // Cek huruf besar
-  //   uppercasePass.checked = /[A-Z]/.test(pass);
-
-  //   // Cek angka
-  //   numberPass.checked = /\d/.test(pass);
-
-  //   // update checkPassword setiap kali input berubah
-  //   checkPassword = minCharPass.checked && uppercasePass.checked && numberPass.checked;
-  // });
-
-  // document.getElementById("button").addEventListener("click", function (event) {
-  //   event.preventDefault(); // cegah reload
-
-  //   const nameInput = document.getElementById("name").value.trim();
-  //   const emailInput = document.getElementById("email").value.trim();
-  //   const passValue = document.getElementById("password").value;
-
-  //   // reset pesan error
-  //   document.getElementById('nameReq').innerText = "";
-  //   document.getElementById('emailReq').innerText = "";
-
-  //   if (nameInput === "") {
-  //     document.getElementById('nameReq').innerText = "Name must be filled!!";
-  //     return;
-  //   } 
-  //   if (emailInput === "") {
-  //     document.getElementById('emailReq').innerText = "Email must be filled!!";
-  //     return;
-  //   }
-  //   if (/\s/.test(emailInput)) {
-  //     alert("❌ Email must not contain spaces");
-  //     return;
-  //   }
-  //   if (!checkPassword) {
-  //     alert("❌ Password is not strong enough");
-  //     return;
-  //   }
-
-  //   // 🔹 Ambil data lama dari localStorage
-  //   let users = JSON.parse(localStorage.getItem("users")) || [];
-
-  //   // 🔹 Cek apakah email sudah terdaftar
-  //   let existingUser = users.find(user => user.email === emailInput);
-  //   if (existingUser) {
-  //     alert("❌ Email already registered!");
-  //     return;
-  //   }
-
-  //   // 🔹 Simpan user baru ke array
-  //   users.push({
-  //     name: nameInput,
-  //     email: emailInput,
-  //     password: passValue
-  //   });
-
-  //   // 🔹 Simpan array ke localStorage
-  //   localStorage.setItem("users", JSON.stringify(users));
-
-  //   alert("✅ Account created successfully!");
-  //   console.log(users);
-  // });
-</script> -->
 
   </body>
 </html>

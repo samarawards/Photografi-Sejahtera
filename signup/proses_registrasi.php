@@ -9,7 +9,7 @@
         if (empty($nama) || empty($email) || empty($_POST['password'])) {
             echo "<script>
                     alert('Semua field harus diisi!');
-                    window.location.href = 'signup.php';
+                    window.location.href = 'index.php';
                 </script>"; return 'href="index.php"';
         } else {
             // 🔍 Cek apakah email sudah ada
@@ -37,19 +37,19 @@
                     ";
             } else {
                 // Kalau belum ada → insert user baru
-                $query = "INSERT INTO users (nama, email, password) VALUES (?, ?, ?)";
+                $query = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
                 $stmt = $conn->prepare($query);
                 $stmt->bind_param("sss", $nama, $email, $password);
 
                 if ($stmt->execute()) {
                     echo "<script>
                             alert('Registrasi berhasil! Selamat datang, $nama.');
-                            window.location.href = 'index.php';
+                            window.location.href = '/Photografi-Sejahtera/dashboard/index.php';
                         </script>";
                 } else {
                     echo "<script>
                             alert('Terjadi error saat registrasi: " . $conn->error . "');
-                            window.location.href = 'signup.php';
+                            window.location.href = 'index.php';
                         </script>";
                 }
                 $stmt->close();
