@@ -24,7 +24,7 @@
           </div>
         </div>
       </nav>
-      <a href="\Photografi-Sejahtera\signup" class="signup-btn">Sign Up</a>
+      <a href="\Photografi-Sejahtera\signup\index.php" class="signup-btn">Sign Up</a>
   </header>
   <!-- Tentang Kami -->
   <section id="Tentang-kami">
@@ -35,12 +35,12 @@
       Kami siap membantu Anda menangkap setiap momen berharga dalam hidup. Dengan <br>
       pengalaman dan keahlian, kami menjamin hasil yang memuaskan. <br><br>
       <button class="btn-dark">Lihat</button>
-      <button class="btn-light"> <a href="http://localhost/Photorgrafi-Website/Photografi-Sejahtera/package/#">Paket</a></button>
+      <button class="btn-light"> <a href="\Photografi-Sejahtera\package\">Paket</a></button>
     </p><br>
   </section>
   <!-- gambar1 -->
   <div class="image-container">
-    <img src="\Photografi-Sejahtera\aassets/img/sylusss.jpg" alt="">
+    <img src="../aassets/img/imagepin.jpg" alt="">
   </div><br><br><br><br><br><br>
   <!-- Paket Foto -->
   <section id="Paket-foto">
@@ -72,13 +72,13 @@
     <p style="text-align: center">Lihat hasil pemotretan terbaik kami di sini</p>
     <div class="gallery">
       <div class="gallery img">
-        <img src="\Photografi-Sejahtera\aassets\img/Sylus2.jpg" alt="">
+        <img src="../aassets/img/img1.jpg" alt="">
       </div>
       <div class="gallery img">
-        <img src="\Photografi-Sejahtera\aassets\img/Sylus1.jpg" alt="">
+        <img src="../aassets/img/img3.jpg" alt="">
       </div>
       <div class="gallery img">
-        <img src="\Photografi-Sejahtera\aassets\img/Sylus3.jpg" alt="">
+        <img src="../aassets/img/img2.jpg" alt="">
       </div>
     </div>
   </section>

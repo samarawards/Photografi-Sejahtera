@@ -1,6 +1,6 @@
 <?php
 // get_packages.php - Ambil semua data packages
-require_once 'koneksi.php';
+require_once 'config.php';
 
 header('Content-Type: application/json');
 

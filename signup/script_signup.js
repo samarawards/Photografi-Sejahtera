@@ -16,18 +16,18 @@ function validasiForm(){
     }
 
     // ✅ Validasi password (3 aturan utama)
-    if (password.length < 8){
+    if (password.length < 6){
         alert("Password minimal 8 karakter.");
         return false;
     }
-    if (!/[A-Z]/.test(password)) {
-        alert("Password harus mengandung setidaknya satu huruf besar (A–Z).");
-        return false;
-    }
-    if (!/[0-9]/.test(password)) {
-        alert("Password harus mengandung setidaknya satu angka (0–9).");
-        return false;
-    }
+    // if (!/[A-Z]/.test(password)) {
+    //     alert("Password harus mengandung setidaknya satu huruf besar (A–Z).");
+    //     return false;
+    // }
+    // if (!/[0-9]/.test(password)) {
+    //     alert("Password harus mengandung setidaknya satu angka (0–9).");
+    //     return false;
+    // }
 
     console.log("Validasi berhasil, data dikirim ke server.");
     return true;

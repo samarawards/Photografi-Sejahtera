@@ -1,7 +1,7 @@
 <?php
 // tambah_package.php
 header('Content-Type: application/json');
-require_once 'koneksi.php';
+require_once 'config.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
